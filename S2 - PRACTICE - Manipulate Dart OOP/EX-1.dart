@@ -30,7 +30,7 @@ class Employee {
     return _yoe;
   }
 
-  List<Skill>? get skills {
+  List<Skill>? get skills { 
     return skill;
   }
 
