@@ -6,7 +6,7 @@ void main() {
       backgroundColor: Colors.grey,
       body: Padding(
         padding: EdgeInsets.all(20),
-        child: Column(
+        child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             NewWidget(date: "Monday",icon1: Icons.cloud,degree: "30 Celsius",),
@@ -41,7 +41,7 @@ class NewWidget extends StatelessWidget {
     return Card(
       child: Padding(
         padding: EdgeInsets.all(16.0),
-        child: Column(
+        child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Icon(icon1),
