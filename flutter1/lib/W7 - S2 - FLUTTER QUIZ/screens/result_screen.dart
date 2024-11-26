@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:fudamental_flutter/W7-S1%20-%20PRACTICE-%20Flutter%20Quiz%20Project%20Start/model/quiz.dart';
-import 'package:fudamental_flutter/W7-S1%20-%20PRACTICE-%20Flutter%20Quiz%20Project%20Start/model/submission.dart';
-import 'package:fudamental_flutter/W7-S1 - PRACTICE- Flutter Quiz Project Start/quiz_app.dart';
-import 'package:fudamental_flutter/W7-S1 - PRACTICE- Flutter Quiz Project Start/widgets/app_button.dart';
+import 'package:flutter1/W7 - S2 - FLUTTER QUIZ/model/quiz.dart';
+import 'package:flutter1/W7 - S2 - FLUTTER QUIZ/model/submission.dart';
+import 'package:flutter1/W7 - S2 - FLUTTER QUIZ/quiz_app.dart';
+import 'package:flutter1/W7 - S2 - FLUTTER QUIZ/widgets/app_button.dart';
 
 class ResultScreen extends StatelessWidget {
   final VoidCallback onRestart;
