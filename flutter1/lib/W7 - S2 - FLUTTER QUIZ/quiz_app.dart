@@ -31,7 +31,7 @@ class _QuizAppState extends State<QuizApp> {
     setState(() {
       quizState = QuizState.notStarted;
       currentQuestionIndex = 0;
-      submission = Submission();
+      submission.removeAnswers();
     });
   }
 
