@@ -3,6 +3,7 @@ import 'package:uuid/uuid.dart';
 
 const uuid = Uuid();
 
+// Define Category enum with icon parameter
 enum Category {
   food(Icons.lunch_dining),
   travel(Icons.flight_takeoff),

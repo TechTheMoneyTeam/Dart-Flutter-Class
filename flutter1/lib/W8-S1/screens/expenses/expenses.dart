@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-
+ 
 import '../../models/expense.dart';
+import 'expenses_form.dart';
 import 'expenses_list.dart';
 
 class Expenses extends StatefulWidget {
@@ -27,20 +28,31 @@ class _ExpensesState extends State<Expenses> {
       category: Category.leisure,
     ),
   ];
+ 
+
+  void onAddPressed() {
+    showModalBottomSheet(
+      context: context,
+      isScrollControlled: true,
+      builder: (ctx) => const ExpenseForm(),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.blue[100],
       appBar: AppBar(
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.add),
+            onPressed: onAddPressed,
+          )
+        ],
         backgroundColor: Colors.blue[700],
         title: const Text('Ronan-The-Best Expenses App'),
-        
-      
       ),
-    
       body: ExpensesList(expenses: _registeredExpenses),
     );
-    
   }
 }
