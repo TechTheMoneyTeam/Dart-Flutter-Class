@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter1/Finalexam/models/course.dart';
 import 'course_view.dart';
+import 'package:flutter1/Finalexam/models/studentscrore.dart';
 
 class CoursesView extends StatefulWidget {
   const CoursesView({super.key});

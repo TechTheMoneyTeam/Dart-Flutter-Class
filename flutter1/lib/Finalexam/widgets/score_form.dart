@@ -1,7 +1,7 @@
 // TODO
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter1/Finalexam/models/course.dart';
+import 'package:flutter1/Finalexam/models/studentscrore.dart';
 
 class ScoreForm extends StatefulWidget {
   final String courseName;
@@ -45,8 +45,10 @@ class _ScoreFormState extends State<ScoreForm> {
                 controller: _nameController,
                 decoration: const InputDecoration(
                   labelText: 'Name',
+                  
                 
                 ),
+                 maxLength: 50,
                 validator: (value) {
                     final name = value;
                   if ( name!.length > 50 || name.isEmpty ) {
@@ -85,7 +87,7 @@ class _ScoreFormState extends State<ScoreForm> {
                     Navigator.pop(context, score);
                   }
                 },
-                child: const Text('Save Score'),
+                child: const Text('Add Score'),
               ),
             ],
           ),

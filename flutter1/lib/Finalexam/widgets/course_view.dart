@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter1/Finalexam/models/course.dart';
 import 'score_form.dart';
+import 'package:flutter1/Finalexam/models/studentscrore.dart';
 
 class CourseView extends StatefulWidget {
   final Course course;

@@ -1,4 +1,5 @@
 // TODO
+import 'studentscrore.dart';
 class Course {
   final String name;
   final List<StudentScore> scores;
@@ -11,9 +12,3 @@ class Course {
   }
 }
 
-class StudentScore {
-  final String studentName;
-  final double score;
-  
-  StudentScore(this.studentName, this.score);
-}
