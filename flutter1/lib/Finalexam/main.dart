@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter1/Finalexam/widgets/courses_view.dart';
-
+import '../Finalexam/widgets/courses_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,8 +13,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
- 
-      home:  CoursesView(), // TODO To change
+
+      home: CoursesView(), // TODO To change
     );
   }
 }
