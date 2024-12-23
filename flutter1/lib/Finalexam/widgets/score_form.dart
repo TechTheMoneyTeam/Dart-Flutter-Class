@@ -1,7 +1,7 @@
 // TODO
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter1/Finalexam/models/studentscrore.dart';
+import '../models/studentscrore.dart';
 
 class ScoreForm extends StatefulWidget {
   final String courseName;
