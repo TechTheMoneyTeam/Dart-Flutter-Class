@@ -53,11 +53,9 @@ class _CourseViewState extends State<CourseView> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-         backgroundColor: Colors.pink,
+        backgroundColor: Colors.pink,
         leading: IconButton(
-         
           icon: const Icon(Icons.arrow_back),
-
           onPressed: () => Navigator.pop(context),
         ),
         title: Text(widget.course.name),
@@ -75,10 +73,12 @@ class _CourseViewState extends State<CourseView> {
           return Card(
             margin: const EdgeInsets.all(8.0),
             child: ListTile(
+              tileColor: Colors.white,
               title: Text(score.studentName),
               trailing: Text(
                 score.score.toStringAsFixed(0),
                 style: TextStyle(
+                  fontSize: 20,
                   color: _getColor(score.score),
                 ),
               ),
